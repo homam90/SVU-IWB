@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="rtl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Properties</title>
+    <link rel="stylesheet" type = "text/css" href="style.css">
+   
+
+    <script type="text/javascript" src="myFunctions.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#continue").click(function () {
+                var p = $("#secondform").css('display');
+                if (p == "block") {
+                    $("#continue").attr('value', 'متابعة');
+                    $("#secondform").hide();
+                }
+                else
+                {
+
+                    $("#secondform").show();
+                    GC();
+                    $("#continue").attr('value', 'رجوع');
+                    
+                }
+               
+                
+               
+            });
+        });
+        $(document).ready(function () {
+            $("#c1").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t1").show();
+                } else {
+                    $("#t1").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c2").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t2").show();
+                } else {
+                    $("#t2").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c3").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t3").show();
+                } else {
+                    $("#t3").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c4").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t4").show();
+                } else {
+                    $("#t4").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c5").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t5").show();
+                } else {
+                    $("#t5").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c6").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t6").show();
+                } else {
+                    $("#t6").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c7").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t7").show();
+                } else {
+                    $("#t7").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c8").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t8").show();
+                } else {
+                    $("#t8").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c9").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t9").show();
+                } else {
+                    $("#t9").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c10").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t10").show();
+                } else {
+                    $("#t10").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#c11").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#t11").show();
+                } else {
+                    $("#t11").hide();
+                }
+            });
+        });
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <!-- To Move Another Page -->
+    <div class="style2-1">
+        <div class="poss_left123 style2-2">
+            <img src="images/Screenshot (6).png" alt="Logo " width="340 " height=" 120 ">
+            <a class="poss_left12 style2-3" href="home.html">to Home </a>
+        </div>
+        <div class="poss_right123 style2-4">
+            <img src=" images/Screenshot (6).png " alt="Logo " width="250" height="120 ">
+            <a class="poss_right12 style2-5" href="AboutUs.html "> to About Us </a>
+        </div>
+    </div>
+    <!-- Section_Content -->
+    <div class="style2-6">
+        <div class="container_To_Proprties ">
+            <form action="/tryit/submitted " method="post">
+                <table border="1">
+                    <caption> العقارات</caption>
+                    <tr>
+                        <th> المدينة </th>
+                        <th> تفاصيل </th>
+                        <th> الإيجار الشهري </th>
+                        <th>إظهار التفاصيل</th>
+                        <th>اختيار</th>
+                    </tr>
+                    <tr>
+                        <th> حماة </th>
+                        <td> غرفة وصالة مساحة 60 متر</td>
+                        <td> 500000ل.س</td>
+                        <td>  <input class="style2-12" type="checkbox" id="c1" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value="منزل في حماة مساحة 60 متر اجار شهري500 الف" /></td>
+
+                    </tr>
+                    <tr style="display:none" id="t1">
+
+                        <td colspan="5 ">
+                            <div>
+
+                                <span class=" style2-7 ">
+                                    <h1 class="style2-8 ">المنطقة : ساحة العاصي </h1>
+                                    <h1 class="style2-8 ">متوفر كراج</h1>
+                                    <h1 class="style2-8 ">الطابق : الاول </h1>
+                                </span>
+                                <span class="style2-9">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/1-1.jpg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/1-2.jpg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/1-3.jpeg " alt=" " width="170px " height="150px ">
+                                </span>
+
+                            </div>
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+                        <th> حمص </th>
+                        <td> شقة غرفتين وصالة 90م </td>
+                        <td>600000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c2" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate"  value="منزل في حمص مساحة 90متر اجار شهري 600الف"/></td>
+                    <tr style="display:none" id="t2">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7">
+                                    <h1 class="style2-8">المنطقة : الرستن</h1>
+                                    <h1 class="style2-8">متوفر كراج</h1>
+                                    <h1 class="style2-8">الطابق : الثالث </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7 ">
+                                    <img class="style2-11" src="images/2-1.jpg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/2-2.jpg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/2-3.png " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th> دمشق </th>
+                        <td> دكان مساحة50م </td>
+                        <td>450000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c3" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value="محل في دمشق مساحة 50متر اجار شهري 450الف "/></td>
+                    <tr style="display:none" id="t3">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7">
+                                    <h1 class="style2-8">المنطقة : الميسات</h1>
+                                    <h1 class="style2-8">متوفر طاقة شمسية</h1>
+                                    <h1 class="style2-8">الطابق : الارضي </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/3-1.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/3-2.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/3-3.jpeg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <th> حلب </th>
+                        <td> دكان مساحة 70م </td>
+                        <td> 300000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c4" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value="محل في حلب مساحة 70 متر اجار شهري 300 الف" /></td>
+                    <tr style="display:none" id="t4">
+                        <td colspan="5 ">
+                            <div>
+                                <span class=" style2-7 ">
+                                    <h1 class="style2-8">المنطقة : الباب</h1>
+                                    <h1 class="style2-8">متوفر مدخنة</h1>
+                                    <h1 class="style2-8">الطابق :الارضي </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7 ">
+                                    <img class="style2-11" src="images/4-1.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/4-2.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/4-3.jpeg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th> اللاذقية </th>
+                        <td> شقة 3 غرف مساحة 100م </td>
+                        <td> 550000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c5" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value="منزل في اللاذقية مساحة 100متر اجار شهري 550الف " /></td>
+                    </tr>
+                    <tr style="display:none" id="t5">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7 ">
+                                    <h1 class="style2-8">المنطقة : كسب</h1>
+                                    <h1 class="style2-8">متوفر طاقة شمسية</h1>
+                                    <h1 class="style2-8">الطابق : الرابع </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/5-1.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/5-2.jpg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/5-3.jpg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th> دمشق </th>
+                        <td> دكان مساحة 80م </td>
+                        <td> 650000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c6" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value="محل في دمشق مساحة 80 متر اجار شهري 650الف"/></td>
+                    <tr style="display:none" id="t6">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7">
+                                    <h1 class="style2-8">المنطقة : باب مصلى</h1>
+                                    <h1 class="style2-8">متوفر مدخنة</h1>
+                                    <h1 class="style2-8">الطابق : الارضي </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/6-1.jpg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/6-2.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/6-3.jpeg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th> ريف دمشق </th>
+                        <td> شقة فارغة غرفة وصالة مساحة 80م </td>
+                        <td> 400000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c7" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value="منزل في ريف دمشق مساحة 80متر اجار شهري 400الف" /></td>
+                    <tr style="display:none" id="t7">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7 ">
+                                    <h1 class="style2-8">المنطقة :دوما</h1>
+                                    <h1 class="style2-8">متوفر كراج</h1>
+                                    <h1 class="style2-8">الطابق : الاول </h1>
+                                </span>
+                                <span class=" style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/7-1.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/7-2.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/7-3.jpeg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th> حمص </th>
+                        <td> شقة مفروشة غرفتين وصالة مساحة 110م </td>
+                        <td> 500000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c8" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value="منزل في حمص مساحة 110متر اجار شهري 500الف"/></td>
+                    </tr>
+                    <tr style="display:none" id="t8">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7">
+                                    <h1 class="style2-8">المنطقة : القصير</h1>
+                                    <h1 class="style2-8">متوفر كراج</h1>
+                                    <h1 class="style2-8">الطابق : الثالث </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/8-1.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/8-2.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/8-3.jpeg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th> دمشق </th>
+                        <td> دكان مساحة 50م </td>
+                        <td> 250000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c9" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value=" محل في دمشق مساحة 50متر اجار شهري 250الف"/></td>
+                    </tr>
+                    <tr style="display:none" id="t9">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7">
+                                    <h1 class="style2-8">المنطقة : مهاجرين</h1>
+                                    <h1 class="style2-8">متوفر كراج</h1>
+                                    <h1 class="style2-8">الطابق : الارضي </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/9-1.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/9-2.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/9-3.jpeg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th> ريف دمشق </th>
+                        <td> شقة غرفة وصالة مساحة 70م </td>
+                        <td> 550000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c10" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate" value="منزل في ريف دمشق مساحة 70متر اجار شهري 550الف "/></td>
+                    </tr>
+                    <tr style="display:none" id="t10">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7">
+                                    <h1 class="style2-8">المنطقة : ببيلا</h1>
+                                    <h1 class="style2-8">متوفر طاقة شمسية</h1>
+                                    <h1 class="style2-8">الطابق : الثالث </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/10-1.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/10-2.jpeg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/10-3.jpeg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th> ريف دمشق </th>
+                        <td> شقة غرفة وصالة مساحة 70م </td>
+                        <td> 550000ل.س </td>
+                        <td> <input class="style2-12" type="checkbox" id="c11" /></td>
+                        <td> <input class="style2-12ro" type="radio" name="estate"  value="منزل في ريف دمشق مساحة 70 متر اجار شهري 550الف" /></td>
+                    </tr>
+                    <tr style="display:none" id="t11">
+                        <td colspan="5 ">
+                            <div>
+                                <span class="style2-7">
+                                    <h1 class="style2-8">المنطقة : حرستا</h1>
+                                    <h1 class="style2-8">متوفر كراج</h1>
+                                    <h1 class="style2-8">الطابق : السادس </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <h1 class="style2-10"> الملكية : طابو</h1>
+                                    <h1 class="style2-10"> بلكون مساحة 12 متر </h1>
+                                    <h1 class="style2-10">مفروش </h1>
+                                </span>
+                                <span class="style2-7">
+                                    <img class="style2-11" src="images/11-1.jpg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/11-2.jpg " alt=" " width="170px " height="150px ">
+                                    <img class="style2-11" src="images/11-3.jpg " alt=" " width="170px " height="150px ">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <p> <input type="button" name="con" value="متابعة" class="btn" id="continue" /></p>
+         
+            </form>
+
+        </div>
+        <div class="align_to_proper">
+            <center>
+                <form onsubmit="openNewWindow(); return false;" id="secondform" style="display:none">
+                    <p>الاسم الكامل<input type="text" name="Fiance" size="14" id="clientname" /></p>
+                    <p>  الرقم الوطني <input type="text" name="new " size="12" id="nationalid" /> </p>
+                    <p>تاريخ الولادة <input type="datetime" name="newdate" id="birth" /></p>
+                    <p>رقم الموبايل <input type="text" placeholder="0955992211" name="new " size="10" id="mobile" /></p>
+                    <p>الإيميل <input type="email" name="newemail" placeholder="email@example.com" size="14" id="mail" /></p>
+                    <p><div class="btn" id="cinput"></div></p>
+
+                   
+                        <button type="button" class="captcha-refresh" onclick="GC()">↻</button>
+                    
+                    <br />
+                    <p><input type="text" placeholder="الرجاء ادخال رمز التحقق" id="cclient"   /></p>
+                     <input type="submit" class="submit-button" value="إرسال" />
+
+                </form>
+                
+            </center>
+        </div>
+
+        <script>
+            document.getElementById("clientname").onchange = checkarabic;
+            document.getElementById("nationalid").onchange = checkid;
+            document.getElementById("mobile").onchange = checkphone;
+            document.getElementById("mail").onchange = checkmail;
+            document.getElementById("cclient").onchange = codecheck;
+
+        </script>
+</body>
+
+</html>
