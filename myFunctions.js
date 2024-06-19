@@ -158,3 +158,55 @@ function checkchoice()
 
     return true;
 };
+function isbirthdayvalid()
+{
+    const birthinput=document.getElementById("birth").value;
+
+    var regex = /^(\d{2})-(\d{2})-(\d{4})$/;
+    
+ 
+    if(!regex.test(birthinput)) {
+        return false;
+    }
+    
+
+    var parts = birthinput.match(regex);
+    var day = parseInt(parts[1], 10);
+    var month = parseInt(parts[2], 10);
+    var year = parseInt(parts[3], 10);
+    
+  
+    if (year < 1900 || year > new Date().getFullYear()-18 ||month < 1 || month > 12) {
+        return false;
+    }
+    
+ 
+    var daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    
+    
+    if (month === 2) {
+        var isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+        if (isLeap) {
+            daysInMonth[1] = 29;
+        }
+    }
+    
+
+    if (day < 1 || day > daysInMonth[month - 1]) {
+        return false;
+    }
+    
+
+    return true;
+};
+
+function checkbirth()
+{
+	const binput=birthinput=document.getElementById("birth");
+	if(!isbirthdayvalid())
+	{
+		binput.select();
+        binput.focus();
+		alert ("يرجى ادخال تاريخ الولادة بشكل صحيح");
+	}
+}
