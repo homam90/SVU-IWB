@@ -1,4 +1,4 @@
-﻿function checkarabic() {
+function checkarabic() {
     const inpu = document.getElementById("clientname");
     const textInput = document.getElementById("clientname").value.trim();
     const arabicletters = /^[\u0600-\u06FF]+$/;
@@ -103,7 +103,7 @@ function codecheck()
 };
 
 function openNewWindow() {
-    if (checkid() && codecheck() && checkmail() && checkphone() && checkarabic() && checkchoice())
+    if (checkid() && codecheck() && checkmail() && checkphone() && checkarabic() && checkchoice() && checkbirth())
     {
         let ch= selectchoice();
         
@@ -202,11 +202,14 @@ function isbirthdayvalid()
 
 function checkbirth()
 {
-	const binput=birthinput=document.getElementById("birth");
-	if(!isbirthdayvalid())
+	const binput=document.getElementById("birth");
+	const bi=document.getElementById("birth").value;
+	if(!isbirthdayvalid()&& bi.length!=0)
 	{
 		binput.select();
         binput.focus();
 		alert ("يرجى ادخال تاريخ الولادة بشكل صحيح");
+		return false;
 	}
+	return true;
 }
